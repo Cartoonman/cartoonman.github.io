@@ -1,0 +1,170 @@
+<html>
+<title> CCW Notes</title>
+<body>
+<center><h1> CCW NOTES </h1>
+<h4>By Peter Lumb G3IRM</h4>
+</center>
+
+<p> These notes have been prepared by G3IRM to give you
+some idea how coherent c.w. operates.   As you all will know,
+morse code consists of dots and dashes arranged to represent
+letters, figures and punctuation marks.   The basic element is
+the dot which has a predetermined length depending on the speed
+of transmission.   High speeds require short dots.  Hand sent
+morse code and for that matter code sent with semi-automatic and
+automatic keys is random in nature and, even if the characters
+are correctly sent, the spaces can vary considerably.
+
+<p> The standard speed for coherent c.w. adopted by Ray
+Petit W7GHM when he designed the system was 12 words per minute. 
+In actual fact it was the dot length which he decided should be
+fixed at 100 milliseconds.   An element space was, therefore,
+also 100 milliseconds, a dash and character space were each equal
+to 300 milliseconds and all other spaces were multiples of the
+same 100 milliseconds.   This timing is still in use today and
+is available on both the COHERENT and PCW programs available for
+coherent c.w.   By connecting two computers together via the
+RS232 interfaces, one running COHERENT and the other running PCW,
+perfect communication can be achieved proving their
+compatibility.   Only transceivers need be added at each end for
+on-the-air communication.
+
+<p>  Coherent c.w. depends entirely on accurate timing based
+on the element length.   If you imagine two square waves both
+identical in timing but derived from separate oscillators and
+having the mark length equal to the space length and both these
+equal to 100 milliseconds it will be obvious that, if they both
+start together, they will stay in step indefinitely if the clocks
+generating them are perfectly stable.   The original hardware
+coherent c.w. system was based on this principle and highly
+stable standard oscillators and transceivers were required at
+both ends of the contact.   The difficulty of providing these is
+the major reason why coherent c.w. did not become popular.
+
+<p> Modern computer programs have changed all that and now
+only reasonably stable transceivers and no frequency standards
+are required but it is obvious that the more stable transceivers
+and computers used in the system are the better will be the
+results.
+
+<p> I must now return to our two square waves.   These can
+be looked upon as strings of dots each dot and space being of a
+definite length.  If we now arrange for one station to send a
+string of dots these will only be received accurately if the
+timimg at the receiving end corresponds to our identical second
+square wave.   Assuming that perfect timing exists at both ends
+the only thing that will stop correct reception is the relative
+phase of the two square waves.   If the rising edge of one square
+wave occurs at exactly the same time as the rising edge of the
+other the signals will be sychronized (coherent) and all
+following transitions will correspond.   Using the original Petit
+hardware filter this was achieved by the transmitting station
+sending a string of dots and the receiving station adjusting a
+phasing control until the string of dots was received clearly and
+distinctly.   Once this was done and, assuming perfect timing,
+the stations would stay in step indefinitely.   Dots and dashes
+transmitted would be received at the other end of the contact and
+as spaces no matter how long were all multiples of the element
+length, a dot or dash received after a space would still occur
+on the rising edge of the receiver clock.   This is a somewhat
+simplified explanation of how coherent c.w. works but it will
+give you some idea of the principle behind the system.   Let me
+repeat that in order to ensure correct operation all oscillators
+had to be exceptionally accurate and, above all, stable.
+
+<p> There are two coherent c.w. programs available.   The
+first is called COHERENT and was written by Bill de Carle VE2IQ
+and it can be obtained from him.   The other is PCW which was
+adapted from Bill's program and rewritten by Ernst Schroder DJ7HS
+to appeal to the operator rather than the experimenter.   This
+is the program you will find on this disk under the name PCW.
+
+<p> The need for stable oscillators has been overcome in
+both programs.   Automatic synchronization has been included so
+there is no need to have phasing controls.   If the program
+receives a string of coherent c.w. dots it will automatically
+synchronize.   Computer clocks and all but the best transceivers
+can drift a little and provision is made in both programs for the
+automatic correction of frequency drift.   In COHERENT this is
+done by feeding pulses from the computer to the up/down frequency
+control lines of suitable transceivers.   The recent Kenwood
+models such as the TS850 and TS450 are ideal as these can be
+controlled in steps of one hertz though models made by other
+makers may also be suitable.   As everyone does not own such a
+transceiver DJ7HS decided to make the software carry out
+automatic tuning.   No up/down lines are therefore required when
+using the PCW program.
+
+<p> DJ7HS has provided sufficient notes and on-screen help
+to enable you to run the program.   It can be used to send c.w.
+as well as coherent c.w. (but only at the three speeds provided)
+as they are in fact exactly the same so far as transmitting is
+concerned.   This is done by simply connecting the computer to
+the key input of the transceiver.   Bear in mind though that the
+output of the computer is at RS232 levels and an interface may
+be needed to connect this to the keying line of the transceiver. 
+A single insulated gate field effect transistor is all that is
+normally needed.   Consult your transceiver manual.   The program
+can only be used to receive coherent c.w. if the VE2IQ interface
+board is included between the receiver output and the computer.
+
+<p> Any transceiver will receive coherent c.w. as it is
+exactly the same as c.w. with the exception that it is timed
+extremely accurately and is, therefore, "perfect" morse code.  
+This means that anyone hearing it can easily assume that ordinary
+c.w. is being sent.   If you are prepared to receive the signal
+from the other station as c.w. you can, of course, make contact. 
+In order to indicate that you can operate coherently it is
+necessary to include something in your call to this effect.   You
+can send a string of dots (by pressing $) followed by CQ CCW DE
+<callsign> and possibly more dots.   This will enable another
+coherent station to synchronize and call you.   If you do not
+send the string of dots the calling station will have to send
+them to enable you to synchronize.
+
+<p> You are sure to receive calls from c.w. stations even
+though you indicate that you are using coherent c.w.   They
+either will not know what CCW means and assume that you have a
+funny way of calling CQ or they may be curious to know what CCW
+is all about.   Please take the opportunity to tell them.
+
+<p>  Unlike some of the digital modes where it may be a
+little difficult to decide which type of signal is being
+received, coherent c.w. is easy to recognise by its perfect
+timing and string of preliminary dots.   Even so you will have
+difficulty finding stations as there are not many stations active
+at the time of writing.   For some time now it has been the
+practice of coherent operators to use one frequency.   Various
+frequencies have been tried.   At one time frequencies one
+kilohertz up from the usual QRP frequencies were used as it was
+thought that QRP operators had the most to gain from coherent
+c.w. and they may be tempted to make enquiries.    This did not
+prove to be the case.   It is now suggested that twenty kilohertz
+up from the bottom of each band be used.   There is sure to be
+some interference whichever frequencies are chosen but coherent
+c.w. with its accurate timing and very narrow bandwidths stands
+a good chance of being heard.   For the time being please use
+these frequencies and watch for any announcement of changes in
+the Digital Journal.   I will try to ensure that other magazines
+are notified of any changes.
+
+<p> I hope you will enjoy using coherent c.w. and that we
+will have more activity in the near future.
+
+<p> Details of activity or any other items of interest are
+always welcome for inclusion in the coherent column of the
+Digital Journal.   Please send them to me:
+
+<p><center>
+Peter Lumb G3IRM
+<br>2 Briarwood Avenue
+<br>Bury Saint Edmunds
+<br>Suffolk IP33 3QF
+<br>United Kingdom 
+</center>
+
+<p>February 1995
+</body>
+</html>
+
+

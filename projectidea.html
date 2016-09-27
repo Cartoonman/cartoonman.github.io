@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Project Idea</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+	<p><b>1. What is the site/app?</b></p>
+
+<p>The site will be an identification and frequency tracking website for wireless RF signals.</p> 
+
+<p>The identification part will have automated signal identification capability for users to submit their recordings and get a result on what it is.</p>
+
+<p>The frequency tracking part will give users a visualization of what frequency/frequency bands each signal can be found in and allow them to submit their signal spottings to the website</p>
+
+<p>Tl;dr (for those that I just lost with the words above) this is an actually useful pokemon go with pokedex and pokemon tracker map showing where certain pokemon have been spotted at, only we replace pokemon with signals and pokedex with automated signal identification.</p>
+
+<p><b>2. What need does this meet, or problem does it solve?</b><p>
+
+<p>a. There is no free automated signal identification system available, let alone one that is integrated into a web platform.<br><br>
+
+b. I have received a bunch of feedback from my personal project sigidwiki where users wished that there was some automated system which could take their samples and identify it automatically. Currently any ‘identifications’ come only from word of mouth, where you post on 5 different websites and subreddits hoping someone has seen your signal before.<br><br>
+
+c. There is no universal frequency tracking system where users can provide their signal sighting logs into a framework which makes the data public for all users to see, as well as mapping it out on both a frequency band and geolocatively. Currently, the way people report signal sighting is by a yahoo groups email chain. Yes, that’s 1990’s style.<br><br>
+
+d. The amateur radio community has been pretty behind in the tech fervor, so there are very few ‘modern’ tools that they can use that hasn’t been developed by someone 10 years ago when windows xp was the thing. In addition, with the recent growth of SDR (software defined radio), this is a rapidly growing area of amateur radio (and radio hackery) which can be capitalized on.</p>
+
+<p><b>3. Who is going to go/use to this site/app?</b></p>
+
+<p>Amateur radio enthusiasts and hobbyists, as well as gadget hackers (hackathon hackers) interested in this tech, and even perhaps academics and professionals in the field, or even government like the FCC. There are a lot of applications in radio transmission that can benefit from a system like this.</p>
+
+
+<p><b>4. Why will they go to this site/app?</b></p>
+
+<p>There are many people who recording signal they find and post on reddit, forums, mailing lists, and other websites in hopes that someone can help them identify what signal it is. Even with the current personal project of mine, sigidwiki, all identifications are done by word of mouth, where you hope that someone has seen or heard it before.<br><br>
+
+For the frequency tracker, there are a lot of applications. There are groups such as IARUMS which do monitoring of the amateur radio bands and report on unauthorized usage of their bands by intruding users. For much of the time, identifying what the signals is half of the work. The other is triangulating the source to take action against the interferer. This extends also to the FCC and other government bodies.</p>
+
+
+<p><b>5. Why will they keep coming back to your site/app?</b></p>
+
+<p>One reason is that it’s the only one that would exist with these features. But more importantly, it fills a niche that is currently underserved. Many new hobbyists in the SDR and radio world who are interested in digital signals with the creation of webSDR are overwhelmed with technical terms and lack any direction in terms of how to identify something they find.<br><br> 
+
+For the more experienced enthusiasts, having a detailed realtime tracking resource of what signals are being transmitted at what frequencies, and where would be almost revolutionary in the field. It would be something that would be used every day by ham radio and radio listeners, and those who compile signal logs can add them to the site, so they can both benefit the public and have their work be useful for many people. The sense of community should also keep people coming back to the site.</p>
+
+<p><b>6. How is it different from other similar site/app?</b></p>
+
+<p>Right now I am not aware of a public resource that actually shows realtime usage of the frequency bands. The closest thing to it is the network of webSDR stations, but that is a different usage sector. There is also the global frequency database which comes pretty close, but it is aimed only for online receivers from GlobalTuners, and the focus of the website is listing transmitters only. Having transmitters is a good thing, but the goal of the frequency tracker is to track reception of the signals, and having reception limited to GlobalTuners (some of which require a fee to use) limits the scope and usability of this website.<br><br> 
+
+I also am not aware of any public resource that allows users to automatically identify signals by submitting it to a website and running an analysis on it to get a result.<br><br>
+
+There are a number of websites that focus on similar aspects, but none actually do what I have proposed. Sigidwiki is simply a store-and-read database which focuses mainly on being a ‘wikipedia’ for signals (its literally running on mediawiki). All identifications come from users who visit the site on their own will and knowledge. There is no automated system of identification.<br><br>
+
+There are programs that do automatic identification, however they are professional grade thousand dollar licensed software bundles from companies like WAVECOM, shoc, Hoka, Krypto500 , etc. The thing is, these bundles do not only just identify signals, they also attempt to decode, which itself requires very deep level of DSP understanding. For the purpose of simply identifying if a signal is a b or c, such a deep level of analysis shouldn't be required, and should be practically feasible.</p>
+
+<p><b>7. What steps will a person go through interacting with the site/app?</b></p>
+
+<p>For the signal identification part, the user will be asked to submit a sample to the site. This can be done either in real time or with a saved recording of an audio file. Once it is submitted, the server will analyze it, and come back with an identification or list of possible identifications for the user’s sample, which will take the user potentially to the corresponding web page about that signal (e.g. linking to article from sigidwiki).<br><br>
+
+For the frequency tracker part, the user will be given a display of frequencies on a map and/or frequency band, and the user can search and browse through different locations, frequencies, or signals. This will let the user be able to sieve through what he or she is looking for. It will be displayed on a map and/or frequency band, and will have pop-up elements which will allow them to click for more details.<br><br> 
+
+If a user wishes to submit their reception logs or findings, there will be a button that brings them to a form where they can submit their information. Details such as signal type, the rough location (city, state, country) where it was received in, frequenc(ies), transmitter location (if known), and an audio sample and/or raw data sample if they have one. This would form a single ‘reception report’, and the data the website will rely on for data visualization and searching will based off of these ‘reception reports’.</p>
+
+</body>
+</html>
